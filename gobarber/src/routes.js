@@ -8,6 +8,7 @@ import UsersController from './app/controllers/UsersController';
 import SessionsController from './app/controllers/SessionsController';
 import FilesController from './app/controllers/FilesController';
 import ProvidersController from './app/controllers/ProvidersController';
+import AppointmentsController from './app/controllers/AppointmentsController';
 
 import authMiddleware from './app/middlewares/auth';
 
@@ -21,5 +22,6 @@ routes.use(authMiddleware);
 routes.put('/users', UsersController.update);
 routes.post('/files', upload.single('file'), FilesController.store);
 routes.get('/providers', ProvidersController.index);
+routes.post('/appointments', AppointmentsController.store);
 
 export default routes;
