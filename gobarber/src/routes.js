@@ -11,6 +11,7 @@ import ProvidersController from './app/controllers/ProvidersController';
 import AppointmentsController from './app/controllers/AppointmentsController';
 import SchedulesController from './app/controllers/SchedulesController';
 import NotificationsController from './app/controllers/NotificationsController';
+import AvailablesController from './app/controllers/AvailablesController';
 
 import authMiddleware from './app/middlewares/auth';
 
@@ -26,6 +27,7 @@ routes.put('/users', UsersController.update);
 routes.post('/files', upload.single('file'), FilesController.store);
 
 routes.get('/providers', ProvidersController.index);
+routes.get('/providers/:id/available', AvailablesController.index);
 
 routes.get('/appointments', AppointmentsController.index);
 routes.post('/appointments', AppointmentsController.store);
