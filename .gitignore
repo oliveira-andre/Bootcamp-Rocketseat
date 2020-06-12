@@ -1,3 +1,7 @@
 tags/
 */tmp
 
+/node_modules
+/go_barber/node_modules
+/module_05/node_modules
+
