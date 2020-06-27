@@ -3,6 +3,7 @@
     "create-react-app": "^3.4.1",
     "express-handlebars": "^4.0.4",
     "mongoose": "^5.9.15",
-    "nodemailer-express-handlebars": "^4.0.0"
+    "nodemailer-express-handlebars": "^4.0.0",
+    "react-native-cli": "^2.0.1"
   }
 }
