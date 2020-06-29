@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
 import {
   StyleSheet,
@@ -13,6 +5,8 @@ import {
   View,
   Text,
 } from 'react-native';
+
+import './config/ReactotronConfig';
 
 const styles = StyleSheet.create({
   container: {
@@ -27,9 +21,9 @@ const styles = StyleSheet.create({
   },
 });
 
-console.log('hello world')
+console.tron.log('teste')
 
-function App() {
+export default function App() {
   return (
     <>
       <ScrollView>
@@ -42,4 +36,3 @@ function App() {
   );
 };
 
-export default App;
