@@ -27,6 +27,8 @@ const styles = StyleSheet.create({
   },
 });
 
+console.log('hello world')
+
 function App() {
   return (
     <>
