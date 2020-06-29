@@ -8,34 +8,11 @@
 
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
   ScrollView,
   View,
   Text,
-  StatusBar,
 } from 'react-native';
-
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App: () => React$Node = () => {
-  return (
-    <>
-      <ScrollView>
-        <View style={styles.container}>
-          <Text style={styles.welcome}>teste</Text>
-          <Text style={styles.welcome}>teste abaixo</Text>
-        </View>
-      </ScrollView>
-    </>
-  );
-};
 
 const styles = StyleSheet.create({
   container: {
@@ -49,5 +26,18 @@ const styles = StyleSheet.create({
     margin: 10,
   },
 });
+
+function App() {
+  return (
+    <>
+      <ScrollView>
+        <View style={styles.container}>
+          <Text style={styles.welcome}>teste</Text>
+          <Text style={styles.welcome}>teste abaixo</Text>
+        </View>
+      </ScrollView>
+    </>
+  );
+};
 
 export default App;
