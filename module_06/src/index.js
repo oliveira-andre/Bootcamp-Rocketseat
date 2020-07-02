@@ -5,7 +5,12 @@ import './config/ReactotronConfig';
 import Routes from './routes';
 
 export default function App() {
-  return <Routes />;
+  return (
+  <>
+    <StatusBar barstyle='light-content' backgroundColor='#7159c1' />
+    <Routes />
+  </>
+  );
 };
 
 Main.navigationOptions = {
